@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Wind_vane_05643.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    padding: 5rem;
+}
+    
+
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+.get
+{
+    background-color: white;
+    width:20rem;
+    max-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    gap:2rem;
+    
+    
+}
+.get input{
+    max-width:12rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: cursive;
+    background-color: white;
+}
+::placeholder{
+    color: rgb(41, 40, 40);
+}
+button{
+    width:7rem;
+    height:3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+.container .result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    color:white;
+    word-wrap: break-word;
+    display: none;
+    backdrop-filter: blur(25px) saturate(62%);
+    -webkit-backdrop-filter: blur(25px) saturate(62%);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin:1.5rem;
+    text-shadow: 2px 2px 18px #67fd22;
+    
+}
+.result .place{
+    font-size: 5rem;
+    word-wrap: break-word;
+    padding: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    
+
+}
+.conditions,.description,.next{
+    font-size: 2rem;
+    text-align: center;
+    color:#FDC5F5;
+    
+    
+}
+.feels,.maxtemp,.mintemp,.pressure,.humidity,.wind,.rain{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0.5rem;
+    
+    color:#EEEBD0;
+    font-weight: 600;
+    
+    border-radius: 2rem;
+}
+.wrong{
+    
+    font-size: 5rem;
+    color: black;
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    text-shadow: 2px 2px 18px #67fd22;
+}
+.empty{
+    font-size: 2rem;
+    color:red;
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+
+}
+@media (max-width:500px)
+{
+    body{
+        background-size: 100% 100% ;
+    }
+}
+.black{
+  color:black;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+    <div class="container">
+        <div class="get">
+        <input type="text" placeholder="Enter city" id="city">
+        <Button id="search">Search</Button>
+    </div>
+    <div class="result b">
+        <div class="place b"></div>
+        <div class="conditions b"></div>
+        <div class="description b"></div>
+        <div class="feels b">Feels like: <span id="feel"></span></div>
+        
+        <div class="maxtemp b">Maximum Temperature: <span id="max"></span></div>
+        <div class="mintemp b">Minimum Temperature: <span id="min"></span></div>
+        <div class="pressure b">Pressure: <span id="pressure"></span></div>
+        <div class="humidity b">Humidity: <span id="humidity"></span></div>
+        <div class="wind b">Wind Speed: <span id="speed"></span></div>
+        <div class="rain b">Precipitation: <span id="prob"></span></div>
+        <div class="next b"></div>
+
+    </div>
+    <div class="wrong">
+        No result found
+    </div>
+    <div class="empty">
+        *Enter the name of the city
+    </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
